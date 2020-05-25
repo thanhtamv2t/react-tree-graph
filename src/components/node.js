@@ -38,9 +38,9 @@ export default class Node extends React.PureComponent {
 		return (
 			<g {...wrappedGProps} transform={this.getTransform()}>
 				<circle {...wrappedCircleProps} r={this.props.radius}/>
-				<text {...wrappedTextProps} dx={this.props.radius + 0.5} dy={this.props.offset}>
-					{this.props[this.props.labelProp]}
-				</text>
+				<Text {...wrappedTextProps} dx={this.props.radius + 0.5} dy={this.props.offset}>
+					{this.props[this.props.labelProp]} 
+				</Text>
 			</g>);
 	}
 }
